@@ -30,4 +30,6 @@ console.log(0 / 0);
 let a = "hfsgdfg";
 let myName = "Bikash";
 let cityName = "Balasore";
-console.log(`my name is ${myName} and i'm from ${cityName}`);
+let collegeName = "USBM";
+const roll = 2305274024;
+console.log(`my name is ${myName} and i'm from ${cityName}.\n I'm styding in ${collegeName} with rollNo: ${roll}`);
