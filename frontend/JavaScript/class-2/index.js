@@ -16,3 +16,14 @@ function a() {
 console.log(address);
 var address = "bhubaneswar";
 console.log(address);
+// prementive data type 
+console.log(null);
+console.log("bhagya");
+console.log(143);
+console.log(undefined);
+console.log(1.23);
+console.log(true);
+console.log(NaN);
+console.log(typeof(NaN));
+let value;
+console.log(typeof(value));
