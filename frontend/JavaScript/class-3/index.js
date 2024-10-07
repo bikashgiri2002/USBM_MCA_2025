@@ -18,3 +18,16 @@ console.log("multiplication");
 console.log(` ${num1} * ${num2} = ${num1 * num2}`);
 console.log("Division");
 console.log(` ${num1} / ${num2} = ${num1 / num2}`);
+//bigInt in js
+let huge = 1111111111111;
+console.log(huge);
+console.log(typeof huge);
+// symbol datatype in js
+let sym1 = Symbol("sym1");
+let sym2 = Symbol("sym1");
+// NaN datatype in js
+console.log(0 / 0);
+let a = "hfsgdfg";
+let myName = "Bikash";
+let cityName = "Balasore";
+console.log(`my name is ${myName} and i'm from ${cityName}`);
