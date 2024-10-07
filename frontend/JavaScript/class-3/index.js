@@ -1,6 +1,6 @@
 // datatype class 3
 let v;
-console.log(typeof(v));
+console.log(typeof v);
 console.log(v);
 // number datatype
 let num = 1.11;
@@ -32,4 +32,15 @@ let myName = "Bikash";
 let cityName = "Balasore";
 let collegeName = "USBM";
 const roll = 2305274024;
-console.log(`my name is ${myName} and i'm from ${cityName}.\n I'm styding in ${collegeName} with rollNo: ${roll}`);
+console.log(
+  `my name is ${myName} and i'm from ${cityName}.\n I'm styding in ${collegeName} with rollNo: ${roll}`
+);
+let string = " biku ";
+let lengthIs = string.replaceAll(" ", "").length;
+console.log(lengthIs);
+console.log(100 + "100");
+console.log("My name is " + myName);
+
+console.log("101" + 100);
+console.log("100" - 2);
+console.log("100" * 3);
