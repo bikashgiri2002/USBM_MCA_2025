@@ -7,3 +7,14 @@ if(totalBill >= 999) {
     totalBill = totalBill - totalBill * 0.1;
 }
 console.log(`final bill = ${totalBill}`);
+let gender = "male";
+let age = 22;
+if(gender == "male") {
+    if(age >= 22) {
+        console.log("he can marry");
+    }else{
+        console.log("he can't marry now");
+    }
+}else{
+    console.log("she is a female");
+}
