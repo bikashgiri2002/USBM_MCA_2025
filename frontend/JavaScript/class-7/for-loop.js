@@ -10,7 +10,7 @@
 // }
 let sum = 0;
 for(let i = 1; i <= 5; i++) {
-    let ran = Math.random();
+    let ran = Math.floor(Math.random() * 6 + 1);
     sum += ran;
     console.log(`${i} random number is ${ran}`);
 }
