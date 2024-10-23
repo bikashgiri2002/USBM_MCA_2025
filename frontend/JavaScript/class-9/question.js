@@ -14,7 +14,7 @@ const calculater = (num1, num2, operation) => {
             return num1 / num2 ;
             break;
         default :
-            console.log("invelid operartion");
+            return "invelid operartion";
     }
 }
 let output = calculater(1,2,"-");
