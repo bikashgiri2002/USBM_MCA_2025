@@ -1,0 +1,23 @@
+let arr = new Array();
+let arr1 = [];
+console.log(typeof arr);
+console.log(typeof arr1);
+arr = ["usbm", "bhagya", 1];
+console.log(arr);
+let newArray = [];
+console.log(newArray);
+let userArray = ["pablo", 60, "criminal", true];
+console.log(userArray);
+let numArray = new Array(1,2,3,4);
+console.log(numArray);
+console.log(numArray.length);
+//push method in array
+// let addNum = 120;
+// numArray.push(addNum);
+// console.log(numArray);
+// let removedValue = numArray.pop();
+// console.log(numArray);
+// console.log(removedValue);
+numArray.push();
+console.log(numArray);
+console.log(numArray.length);
