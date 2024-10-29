@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(31, 29, 29);
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+}
+.pop-up{
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50px;
+    margin: 20px auto;
+    background-color: aqua;
+    text-overflow: clip;
+    animation: pop 4s linear ;
+}
+@keyframes pop {
+    from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+}

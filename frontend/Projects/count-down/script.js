@@ -4,13 +4,12 @@ let interval;
 let time;
 let startTimer = () => {
   time = parseInt(input.value);
+  input.style.display = "none";
   interval = setInterval(() => {
     if (time > 0) {
-      input.style.display = "none";
       output.innerHTML = `${Math.floor(time / 60)} : ${time % 60}`;
       time--;
     } else {
-      input.style.display = "none";
       output.innerHTML = `Time's Up`;
     }
   }, 1000);

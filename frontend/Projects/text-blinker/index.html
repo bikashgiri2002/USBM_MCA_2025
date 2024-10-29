@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Blinker</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            height: 100vh;
+            width: 99vw;
+            background-color: rgb(36, 35, 35);
+        }
+        .container {
+            height: 300px;
+            width: 500px;
+            background-color: rgb(43, 40, 40);
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px black;
+            padding: 10px;
+            margin: 100px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text-box {
+            text-align: center;
+            text-shadow: 2px 2px 2px violet;
+            color: lime;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-box" id="text-box">I LOVE YOU</div>
+    </div>
+    <script>
+        let random = () => Math.floor(Math.random() * 256 );
+        let change = () => {
+            let text_box = document.getElementById("text-box");
+            if(text_box.style.visibility === "hidden") {
+                text_box.style.visibility = "visible";
+                // console.log(random());
+                text_box.style.color = `rgb(${random()}, ${random()}, ${random()})`;
+            }else {
+                text_box.style.visibility = "hidden";
+            }
+        };
+        setInterval(change, 500);
+    </script>
+</body>
+</html>
