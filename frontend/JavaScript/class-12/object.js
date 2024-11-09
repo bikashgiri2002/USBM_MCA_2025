@@ -40,3 +40,15 @@ console.log(
 console.log(e.like);
 console.log();
 })
+let student = {
+    name : "bhagya",
+    greet : function () {
+        console.log(`hello ${this.name}`);
+    },
+    dispaly : () => {
+        console.log(`hello ${this.name}`);
+    }
+}
+//student.greet;
+student.greet();
+student.dispaly();// it's shows hello undefine as arrow function has block scope
