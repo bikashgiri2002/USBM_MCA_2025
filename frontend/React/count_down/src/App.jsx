@@ -2,11 +2,13 @@ import { useRef } from "react";
 import "./App.css";
 
 function App() {
+  // useRef() initialization
   const inputRef = useRef(null);
   const outputRef = useRef(null);
   let interval;
   let time;
   let startTimer = () => {
+    //getting the value
     time = parseInt(inputRef.current.value);
     inputRef.current.style.display = "none";
     interval = setInterval(() => {
@@ -19,6 +21,7 @@ function App() {
     }, 1000);
   };
   let restart = () => {
+    // restating the clock
     clearInterval(interval);
     outputRef.current.innerHTML = null;
     inputRef.current.style.display = "block";
@@ -26,6 +29,7 @@ function App() {
     inputRef.current.value = time;
   };
   let stop = () => {
+    // stoping the clock where it is
     clearInterval(interval);
     inputRef.current.value = time;
   };
