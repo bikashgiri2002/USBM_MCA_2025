@@ -20,12 +20,12 @@ function Bmi() {
     setHeight(Number(event.target.value)/100);
   }
   //output canculation
-  //useEffect Hook
-  useEffect(() => {
+  const bmiCalculate = () => {
   const output = weight / (height * height);
-  setOutput(output);
-  },[height,weight,selectedGender]);
-
+  setOutput((output) ? `${selectedGender} : ${output}` : "Enter valid input");
+  }
+  //useEffect Hook
+  useEffect(bmiCalculate, [weight,height,selectedGender]);
   return (
     <div className="w-full h-screen bg-gray-600 flex flex-col justify-center items-center p-3">
       <h2 className="text-3xl font-bold text-white mb-6">BMI Calculator</h2>
