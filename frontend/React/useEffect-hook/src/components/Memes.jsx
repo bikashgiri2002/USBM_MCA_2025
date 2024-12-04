@@ -7,6 +7,7 @@ function Memes() {
   const getMemes = async () => {
     try {
       const res = await axios.get("https://meme-api.com/gimme/wholesomememes");
+      //automatically convert into json file
       const data = res.data;
       setMemes(data);
     } catch (error) {
