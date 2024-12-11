@@ -33,7 +33,7 @@ const PostsList = () => {
             <h1>Blog Posts</h1>
             <ul>
                 {posts.map((post) => (
-                    <li key={post.id}>
+                    <li key={post.id} className='list'>
                         <Link to={`/posts/${post.id}`}>{post.title}</Link>
                     </li>
                 ))}
