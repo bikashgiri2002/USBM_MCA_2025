@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("panda-cartoon.jpg") no-repeat center center/cover;
+  filter: blur(10px);
+  z-index: -1;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(25, 208, 233);
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 5px rgb(62, 221, 242);
+  height: 30%;
+  width: 50%;
+  background-color: #282c34;
+  z-index: 1;
+}
+.text-box {
+    text-align: center;
+    color: chartreuse;
+    font-size: 3rem;
+}
